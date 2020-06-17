@@ -1,11 +1,18 @@
 '''
 Input: a List of integers
-Returns: a List of integers
+Returns: a List of integers()
 '''
+
+
 def moving_zeroes(arr):
     # Your code here
-
-    pass
+    new = []
+    for i in range(len(arr)):
+        if arr[i] == 0:
+            new.append(arr[i])
+        else:
+            new.insert(0, arr[i])
+    return new
 
 
 if __name__ == '__main__':
