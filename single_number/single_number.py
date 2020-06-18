@@ -7,7 +7,6 @@ Returns: an integer
 def single_number(arr):
     # Your code here
     if len(arr) > 0:
-        mini = min(arr)
         maxi = max(arr)
         count = [0 for i in range(maxi + 1)]
         for i in range(len(arr)):
